@@ -535,6 +535,40 @@ body.dark-mode #theme-toggle:hover {
   box-shadow: var(--shadow-lg);
 }
 
+/* Featured Card (Span 2 columns on desktop) */
+@media (min-width: 900px) {
+  .article-card.featured {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+  }
+  .article-card.featured .card-image-wrapper {
+    width: 48%;
+    height: auto;
+    min-height: 280px;
+  }
+  .article-card.featured .card-image {
+    height: 100%;
+    border-radius: 18px 0 0 18px;
+  }
+  .article-card.featured .card-body {
+    width: 52%;
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article-card.featured .card-title {
+    font-size: 1.55rem;
+    margin-bottom: 1rem;
+  }
+  .article-card.featured .card-excerpt {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Article Card Images */
 .card-image-wrapper {
   width: 100%;
