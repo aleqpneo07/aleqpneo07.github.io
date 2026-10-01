@@ -370,37 +370,54 @@ body.dark-mode #theme-toggle:hover {
    Hero Section
    ========================================================================== */
 
-.hero-section {
+.hero-section, .hero {
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0 70px;
   background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
   border-bottom: 1px solid var(--border);
+  position: relative;
 }
 
-.hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+.hero-tagline {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.08);
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(79, 70, 229, 0.15);
+}
+
+.hero-title, .hero h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1.2;
 }
 
-.hero-title span {
+.hero-title span, .hero h1 span {
   color: var(--primary);
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
+.hero-subtitle, .hero p {
+  font-size: 1.15rem;
   color: var(--text-secondary);
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
+  max-width: 680px;
+  margin: 0 auto 2.25rem;
+  line-height: 1.6;
 }
 
-.hero-cta {
+.hero-cta, .hero-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -430,15 +447,18 @@ body.dark-mode #theme-toggle:hover {
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: var(--surface);
   color: var(--text-primary);
-  border-color: var(--border);
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
   background-color: var(--background);
   border-color: var(--border-hover);
   color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* ==========================================================================
@@ -452,10 +472,28 @@ body.dark-mode #theme-toggle:hover {
   margin-bottom: 2.5rem;
 }
 
+.section-header-center {
+  text-align: center;
+  margin-bottom: 2.75rem;
+}
+
 .section-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+}
+
+.section-header-center .section-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 620px;
 }
 
 .section-link {
