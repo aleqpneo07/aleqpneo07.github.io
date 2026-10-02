@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,9 @@
     <meta name="twitter:description" content="Comparamos en profundidad los tres grandes modelos de IA de 2026. Descubre cuál es mejor para ti según tus necesidades: trabajo, estudio, programación y creatividad.">
     
     <link rel="canonical" href="https://iafacil.com/articulos/gpt6-vs-claude-vs-gemini">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     
     <!-- Structured Data JSON-LD -->
@@ -50,433 +53,326 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9415484788744640"
          crossorigin="anonymous"></script>
 </head>
-<body class="bg-light text-dark font-sans antialiased">
-    <!-- Header Navigation -->
-    <header class="bg-white shadow-sm sticky-top">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold text-primary flex items-center gap-2">
-                <span class="text-3xl">🤖</span> IAFácil
-            </a>
-            <nav class="hidden md:flex gap-6">
-                <a href="../index.html" class="text-dark hover:text-primary transition-colors">Inicio</a>
-                <a href="../herramientas.html" class="text-dark hover:text-primary transition-colors">Herramientas</a>
-                <a href="../tutoriales.html" class="text-dark hover:text-primary transition-colors">Tutoriales</a>
-                <a href="../noticias.html" class="text-dark hover:text-primary transition-colors">Noticias</a>
-                <a href="../sobre-nosotros.html" class="text-dark hover:text-primary transition-colors">Sobre Nosotros</a>
-            </nav>
-            <button class="md:hidden text-2xl text-dark hover:text-primary focus:outline-none" aria-label="Menú principal">☰</button>
-        </div>
-    </header>
+<body>
+  <!-- Reading progress -->
+  <div class="reading-progress"><div id="reading-progress"></div></div>
 
-    <!-- Main Content Area -->
-    <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
-        
-        <!-- Main Article -->
-        <main class="lg:col-span-8 bg-white rounded-lg shadow-sm p-6 md:p-8">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="../index.html" class="site-logo">🤖 <span>IAFácil</span></a>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#herramientas">Herramientas</a></li>
+          <li><a href="../index.html#tutoriales">Tutoriales</a></li>
+          <li><a href="../index.html#noticias">Noticias</a></li>
+          <li><a href="../index.html#hardware">Hardware</a></li>
+          <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <article class="article-content">
             <!-- Breadcrumbs -->
-            <nav class="text-sm mb-6 text-gray-500" aria-label="Breadcrumb">
-                <ol class="flex gap-2">
-                    <li><a href="../index.html" class="hover:text-primary">Inicio</a></li>
-                    <li>/</li>
-                    <li><a href="../noticias.html" class="hover:text-primary">Artículos</a></li>
-                    <li>/</li>
-                    <li class="text-dark font-semibold">Comparativa Definitiva 2026</li>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html#noticias">Noticias IA</a></li>
+                    <li aria-current="page">Comparativa Definitiva 2026</li>
                 </ol>
             </nav>
 
             <!-- Article Header -->
-            <header class="mb-8 border-b pb-6">
-                <span class="inline-block bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4">Comparativa</span>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-dark leading-tight mb-4">GPT-6 vs Claude 5.5 vs Gemini 3.8: Comparativa Definitiva (2026)</h1>
-                <div class="flex flex-wrap items-center gap-4 text-gray-600 text-sm">
-                    <div class="flex items-center gap-2">
-                        <span class="font-medium text-dark">Autor:</span> Equipo IAFácil
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="font-medium text-dark">Fecha:</span> 29 septiembre 2026
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="font-medium text-dark">Tiempo de lectura:</span> 12 min
-                    </div>
+            <header class="article-header">
+                <span class="category-badge">Comparativa 2026</span>
+                <h1 class="article-title">GPT-6 vs Claude 5.5 vs Gemini 3.8: Comparativa Definitiva (2026)</h1>
+                <div class="article-meta">
+                    <span>👤 Autor: Equipo IAFácil</span>
+                    <span>📅 29 septiembre 2026</span>
+                    <span>⏱️ 12 min de lectura</span>
                 </div>
             </header>
 
             <!-- Table of Contents -->
-            <div class="bg-light p-4 rounded-lg mb-8 border border-gray-200">
-                <h2 class="text-lg font-bold mb-3 flex items-center gap-2 text-dark">
+            <div class="toc">
+                <h2>
                     📋 Índice de Contenidos
                 </h2>
-                <nav id="toc" class="text-sm">
+                <nav id="toc">
                     <!-- Automatically populated by JS, placeholder provided for accessibility -->
-                    <ul class="space-y-2 text-primary">
-                        <li><a href="#introduccion" class="hover:underline">1. Introducción: ¿Por qué importa esta comparativa en 2026?</a></li>
-                        <li><a href="#que-ha-cambiado" class="hover:underline">2. ¿Qué ha cambiado en 2026?</a></li>
-                        <li><a href="#gpt-6" class="hover:underline">3. GPT-6: La familia completa</a></li>
-                        <li><a href="#claude-5-5" class="hover:underline">4. Claude 5.5 Opus: El rey del razonamiento</a></li>
-                        <li><a href="#gemini-3-8" class="hover:underline">5. Gemini 3.8: El ecosistema de Google</a></li>
-                        <li><a href="#tabla-comparativa" class="hover:underline">6. Tabla Comparativa Completa</a></li>
-                        <li><a href="#cual-elegir" class="hover:underline">7. ¿Cuál elegir según tu caso?</a></li>
-                        <li><a href="#recomendacion-final" class="hover:underline">8. Nuestra Recomendación Final</a></li>
-                        <li><a href="#faq" class="hover:underline">9. Preguntas Frecuentes</a></li>
+                    <ul>
+                        <li><a href="#introduccion">1. Introducción: ¿Por qué importa esta comparativa en 2026?</a></li>
+                        <li><a href="#que-ha-cambiado">2. ¿Qué ha cambiado en 2026?</a></li>
+                        <li><a href="#gpt-6">3. GPT-6: La familia completa</a></li>
+                        <li><a href="#claude-5-5">4. Claude 5.5 Opus: El rey del razonamiento</a></li>
+                        <li><a href="#gemini-3-8">5. Gemini 3.8: El ecosistema de Google</a></li>
+                        <li><a href="#tabla-comparativa">6. Tabla Comparativa Completa</a></li>
+                        <li><a href="#cual-elegir">7. ¿Cuál elegir según tu caso?</a></li>
+                        <li><a href="#recomendacion-final">8. Nuestra Recomendación Final</a></li>
+                        <li><a href="#faq">9. Preguntas Frecuentes</a></li>
                     </ul>
                 </nav>
             </div>
 
             <!-- Article Content -->
-            <div class="prose prose-lg max-w-none text-gray-800 leading-relaxed space-y-6">
+            <div>
                 
-                <h2 id="introduccion" class="text-3xl font-bold text-dark mt-8 mb-4">1. Introducción: ¿Por qué importa esta comparativa en 2026?</h2>
+                <h2 id="introduccion">1. Introducción: ¿Por qué importa esta comparativa en 2026?</h2>
                 <p>El panorama de la inteligencia artificial ha avanzado a una velocidad asombrosa en los últimos años. Llegados al mes de septiembre de 2026, nos encontramos en un punto de inflexión sin precedentes. Atrás quedaron los días en los que los modelos de lenguaje apenas lograban mantener una conversación coherente o cometían alucinaciones burdas. Hoy en día, herramientas como <strong>GPT-6 de OpenAI, Claude 5.5 de Anthropic y Gemini 3.8 de Google</strong> se han convertido en asistentes cognitivos casi infalibles, con capacidades de razonamiento, programación y creatividad que desafían nuestras expectativas.</p>
                 <p>Esta comparativa no es solo un ejercicio de especificaciones técnicas. Se trata de entender cómo estas tres potencias tecnológicas pueden transformar tu vida diaria, tu flujo de trabajo profesional o tus procesos de aprendizaje. Al decidir qué suscripción mensual merece tu inversión, ya sea en un entorno corporativo o personal, la elección del modelo adecuado puede marcar la diferencia entre perder horas intentando que la IA entienda tus instrucciones o conseguir resultados brillantes en cuestión de segundos. En IAFácil hemos sometido a estos tres titanes a un escrutinio riguroso para ofrecerte la respuesta más completa y actualizada del momento.</p>
 
                 <!-- ADSENSE AD SLOT -->
-                <div class="my-8 p-4 border-2 border-dashed border-gray-300 bg-gray-50 text-center text-gray-500 text-sm">
+                <div>
                     <!-- ADSENSE AD SLOT -->
                     <p>Espacio reservado para anuncio (AdSense)</p>
                 </div>
 
-                <h2 id="que-ha-cambiado" class="text-3xl font-bold text-dark mt-8 mb-4">2. ¿Qué ha cambiado en 2026?</h2>
+                <h2 id="que-ha-cambiado">2. ¿Qué ha cambiado en 2026?</h2>
                 <p>Si analizamos el progreso desde los modelos que dominaban en 2024 y 2025, el ecosistema de IA ha sufrido una transformación radical, pasando de ser meros "generadores de texto" a "sistemas de agentes autónomos". El año 2026 se caracteriza por tres grandes tendencias que definen a la nueva generación de IA:</p>
-                <ul class="list-disc pl-6 space-y-2">
+                <ul>
                     <li><strong>Ventanas de contexto infinito (o virtualmente infinito):</strong> La barrera de los 200.000 tokens que veíamos en el pasado ha quedado obsoleta. Hoy, modelos como Gemini 3.8 y Claude 5.5 manejan ventanas de contexto de hasta 10 millones de tokens con un nivel de recuerdo (recall) del 99.9%. Esto significa que puedes cargar libros enteros, bases de código masivas o historiales médicos completos sin que la IA "olvide" ningún detalle importante.</li>
                     <li><strong>Razonamiento paso a paso integrado:</strong> La nueva arquitectura ya no responde de manera impulsiva. Modelos como GPT-6 han incorporado lo que antes se conocía como el paradigma "Q*" o "o1", es decir, la IA dedica tiempo a pensar, planificar y corregirse a sí misma antes de emitir una palabra, reduciendo las alucinaciones a menos del 0.1%.</li>
                     <li><strong>Multimodalidad nativa hiperrealista:</strong> Ya no hay módulos separados para texto, audio, imagen o vídeo. Los tres modelos procesan estas modalidades de forma nativa e integrada. Pueden ver un vídeo de dos horas, escuchar el audio, analizar los gestos faciales y extraer datos de manera simultánea, interactuando en tiempo real con una latencia de milisegundos.</li>
                 </ul>
                 <p>Con este marco en mente, veamos cómo cada una de las empresas ha enfocado el desarrollo de sus productos estrella y qué los hace únicos en el mercado actual.</p>
 
-                <h2 id="gpt-6" class="text-3xl font-bold text-dark mt-8 mb-4">3. GPT-6: La familia completa (GPT-6 Astra, Sol, Luna)</h2>
+                <h2 id="gpt-6">3. GPT-6: La familia completa (GPT-6 Astra, Sol, Luna)</h2>
                 <p>OpenAI ha vuelto a dar un golpe en la mesa con el lanzamiento de la familia GPT-6, reestructurando completamente su nomenclatura y sus capacidades. En lugar de ofrecer un solo modelo genérico, han diversificado la oferta para adaptarse a necesidades específicas, dividiéndolo en tres niveles principales: <strong>GPT-6 Luna</strong> (rápido y eficiente, pensado para dispositivos móviles y tareas rutinarias), <strong>GPT-6 Sol</strong> (el modelo estándar para el 90% de los usuarios) y el imponente <strong>GPT-6 Astra</strong> (la cima del razonamiento y la autonomía).</p>
                 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Novedades y Puntos Fuertes</h3>
+                <h3>Novedades y Puntos Fuertes</h3>
                 <p>El mayor logro de GPT-6 Astra es su capacidad para operar como un agente verdaderamente autónomo. Gracias a su integración con el sistema operativo de escritorio (disponible nativamente en Windows y macOS a través de permisos de accesibilidad avanzados), GPT-6 puede tomar el control del cursor, abrir aplicaciones, rellenar hojas de cálculo y navegar por interfaces visuales complejas para cumplir objetivos a largo plazo. Además, su modelo de voz ha superado la prueba de Turing con creces, incorporando inflexiones, pausas, respiraciones y detección del estado de ánimo del usuario con una precisión asombrosa.</p>
                 <p>En cuanto a la programación, GPT-6 ha mejorado drásticamente en la arquitectura de software. Ya no solo escribe fragmentos de código, sino que es capaz de diseñar, compilar, testear y desplegar aplicaciones completas, entendiendo repositorios de más de 50.000 líneas de código con una facilidad pasmosa.</p>
                 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Puntos Débiles</h3>
+                <h3>Puntos Débiles</h3>
                 <p>A pesar de su inmenso poder, GPT-6 Astra es conocido por ser computacionalmente muy pesado, lo que significa que en las horas punta de tráfico global, las respuestas pueden tardar varios segundos en comenzar. Además, OpenAI sigue manteniendo fuertes filtros de seguridad y alineación ("guardrails") que a veces resultan en "falsos positivos" donde el modelo se niega a realizar tareas creativas inofensivas por exceso de precaución.</p>
                 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Precios y Mejores Casos de Uso</h3>
+                <h3>Precios y Mejores Casos de Uso</h3>
                 <p>La suscripción a ChatGPT Plus (que incluye GPT-6 Sol y acceso limitado a Astra) se mantiene en 22€/mes, mientras que el nivel "ChatGPT Pro", diseñado para desarrolladores y profesionales que necesitan Astra sin límites, cuesta unos 60€/mes.</p>
                 <p><strong>Ideal para:</strong> Desarrolladores de software, directores de proyecto, creadores de contenido multimedia que requieren generación de vídeo Sora integrada, y cualquier usuario que necesite que la IA ejecute acciones en su ordenador, y no solo converse.</p>
 
                 <!-- ADSENSE AD SLOT -->
-                <div class="my-8 p-4 border-2 border-dashed border-gray-300 bg-gray-50 text-center text-gray-500 text-sm">
+                <div>
                     <!-- ADSENSE AD SLOT -->
                     <p>Espacio reservado para anuncio (AdSense)</p>
                 </div>
 
-                <h2 id="claude-5-5" class="text-3xl font-bold text-dark mt-8 mb-4">4. Claude 5.5 Opus: El rey del razonamiento</h2>
+                <h2 id="claude-5-5">4. Claude 5.5 Opus: El rey del razonamiento</h2>
                 <p>Anthropic, con su compromiso por crear la IA más segura y útil del mundo, ha perfeccionado su obra maestra: Claude 5.5. A diferencia de OpenAI, Anthropic ha centrado sus esfuerzos en lo que denominan "Razonamiento Constitucional Dinámico", logrando una brillantez analítica insuperable. La familia está compuesta por <strong>Claude 5.5 Opus, Fable 5.1 (antes Sonnet) y Mythos 5.1 (antes Haiku)</strong>, además de la reciente integración de "Claude Code", su herramienta dedicada en exclusiva para el terminal del programador.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Novedades y Puntos Fuertes</h3>
+                <h3>Novedades y Puntos Fuertes</h3>
                 <p>Si hay algo en lo que Claude 5.5 Opus destaca por encima de cualquier otro modelo, es en su capacidad de escritura, análisis literario y razonamiento jurídico-científico. Su tono es excepcionalmente natural, empático y libre de los clichés que a menudo delatan a otras IAs (palabras como "crucial", "tapiz", o conclusiones redundantes). Opus lee con una profundidad humana, captando el subtexto, la ironía y el matiz de documentos extremadamente complejos.</p>
                 <p>El uso de la ventana de contexto de 2 millones de tokens es impecable. Puedes suministrarle 50 documentos financieros (PDFs, Excel) y no solo extraerá la información exacta, sino que cruzará datos entre ellos para detectar anomalías o tendencias que un analista humano tardaría semanas en ver. Su producto "Artifacts", que permite visualizar código, gráficos y documentos interactivos en una ventana lateral, se ha vuelto estándar en la industria, convirtiendo a Claude en un IDE virtual y un lienzo colaborativo de primer nivel.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Puntos Débiles</h3>
+                <h3>Puntos Débiles</h3>
                 <p>Donde Claude 5.5 flaquea frente a GPT-6 y Gemini es en el ecosistema. Mientras que Google y OpenAI están profundamente integrados en dispositivos, suites ofimáticas y generación multimodal pesada (como vídeos o audio fotorrealista), Anthropic sigue centrado predominantemente en el texto, el código y el análisis estático de imágenes. Si necesitas generar un clip de vídeo para una campaña de marketing o necesitas que la IA hable con la naturalidad hiperrealista del modo voz de GPT-6, Claude no es tu mejor aliado.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Precios y Mejores Casos de Uso</h3>
+                <h3>Precios y Mejores Casos de Uso</h3>
                 <p>Claude Pro tiene un coste de unos 22€/mes, al nivel de sus competidores, proporcionando un uso extensivo de Opus y de la revolucionaria función de Artifacts.</p>
                 <p><strong>Ideal para:</strong> Escritores, abogados, investigadores académicos, analistas de datos, estudiantes universitarios y programadores de software que valoran un código limpio, razonado y documentado exhaustivamente. Si la sutileza del lenguaje es tu prioridad, Claude es indiscutiblemente el rey.</p>
 
-                <h2 id="gemini-3-8" class="text-3xl font-bold text-dark mt-8 mb-4">5. Gemini 3.8: El ecosistema de Google</h2>
+                <h2 id="gemini-3-8">5. Gemini 3.8: El ecosistema de Google</h2>
                 <p>Google ha consolidado por fin todo su poder computacional e ingenieril en <strong>Gemini 3.8</strong>. Superando los tropiezos del pasado, Google DeepMind ha creado un modelo que, si bien puede empatar con GPT y Claude en ciertas métricas de razonamiento crudo, no tiene rival cuando se trata de velocidad, multimodalidad nativa masiva e integración de ecosistema. Las versiones clave son <strong>Gemini 3.8 Flash, Flash Cyber (para ciberseguridad) y Gemini 3.8 Ultra</strong>.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Novedades y Puntos Fuertes</h3>
+                <h3>Novedades y Puntos Fuertes</h3>
                 <p>La integración con Google Workspace es el verdadero superpoder de Gemini 3.8. Este modelo vive dentro de tu Google Drive, Gmail, Docs y Sheets. Puedes pedirle: "Lee todos los correos del proyecto Alpha de la última semana, mira el documento de estrategia en mi Drive y crea una presentación en Google Slides de 10 diapositivas resumiendo el estado actual". Lo hará en menos de 10 segundos, de manera perfecta y con diseño profesional.</p>
                 <p>Además, Gemini 3.8 es pionero en la arquitectura "MoE Ultra-Multimodal". Es capaz de analizar horas de metraje de vídeo 4K en tiempo real, permitiendo a los creadores de vídeo buscar frames específicos simplemente describiendo lo que sucede visualmente ("encuentra el momento donde el gato tira el vaso verde de la mesa"). Su velocidad de respuesta, especialmente en el modelo Flash, desafía los límites físicos, ofreciendo casi 1500 palabras por segundo.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Puntos Débiles</h3>
+                <h3>Puntos Débiles</h3>
                 <p>Aunque Gemini 3.8 ha mejorado enormemente, algunos usuarios avanzados de programación siguen encontrando que en escenarios de debugging de arquitectura muy compleja, tiende a ser menos incisivo que Claude 5.5 Opus. Además, el modelo sufre de "censura comercial"; al estar tan vinculado a los productos de Google, en ocasiones es excesivamente conservador con temas controversiales para proteger la imagen de marca, lo que puede resultar frustrante para investigadores sociopolíticos o periodistas.</p>
 
-                <h3 class="text-2xl font-semibold text-dark mt-6 mb-3">Precios y Mejores Casos de Uso</h3>
+                <h3>Precios y Mejores Casos de Uso</h3>
                 <p>Google One AI Premium incluye Gemini Advanced por unos 22€/mes, pero tiene la enorme ventaja de incluir 2TB de almacenamiento en la nube, lo que lo convierte en la mejor oferta económica del mercado por un amplio margen.</p>
                 <p><strong>Ideal para:</strong> Usuarios fuertemente inmersos en el ecosistema de Google (Gmail, Drive), analistas de vídeo, creadores de contenido multimodal rápido, y empresas que necesitan procesar cantidades masivas de información (como libros de miles de páginas) gracias a su ventana de contexto de 10 millones de tokens.</p>
 
-                <h2 id="tabla-comparativa" class="text-3xl font-bold text-dark mt-8 mb-4">6. Tabla Comparativa Completa</h2>
+                <h2 id="tabla-comparativa">6. Tabla Comparativa Completa</h2>
                 <p>Para facilitar la toma de decisión, hemos resumido las características principales de los tres modelos líderes en la siguiente tabla comparativa detallada, evaluándolos del 1 al 10 en base a pruebas empíricas realizadas por el equipo de IAFácil durante septiembre de 2026:</p>
                 
-                <div class="overflow-x-auto my-6">
-                    <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-sm">
-                        <thead class="bg-primary text-white">
+                <div class="table-container">
+                    <table>
+                        <thead>
                             <tr>
-                                <th class="py-3 px-4 text-left border-b border-r border-gray-300 font-semibold">Característica / Área</th>
-                                <th class="py-3 px-4 text-center border-b border-r border-gray-300 font-semibold">GPT-6 Astra (OpenAI)</th>
-                                <th class="py-3 px-4 text-center border-b border-r border-gray-300 font-semibold">Claude 5.5 Opus (Anthropic)</th>
-                                <th class="py-3 px-4 text-center border-b border-gray-300 font-semibold">Gemini 3.8 Ultra (Google)</th>
+                                <th>Característica / Área</th>
+                                <th>GPT-6 Astra (OpenAI)</th>
+                                <th>Claude 5.5 Opus (Anthropic)</th>
+                                <th>Gemini 3.8 Ultra (Google)</th>
                             </tr>
                         </thead>
-                        <tbody class="text-gray-700">
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Ventana de Contexto</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">500.000 tokens</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">2.000.000 tokens</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300 bg-green-50 font-bold text-green-700">10.000.000 tokens</td>
+                        <tbody>
+                            <tr>
+                                <td>Ventana de Contexto</td>
+                                <td>500.000 tokens</td>
+                                <td>2.000.000 tokens</td>
+                                <td><strong>10.000.000 tokens</strong></td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Capacidad de Razonamiento Lógico</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">9.8 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">9.9 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300">9.0 / 10</td>
+                            <tr>
+                                <td>Capacidad de Razonamiento Lógico</td>
+                                <td><strong>9.8 / 10</strong></td>
+                                <td><strong>9.9 / 10</strong></td>
+                                <td>9.0 / 10</td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Calidad de Escritura Natural</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">8.5 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">10 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300">8.0 / 10</td>
+                            <tr>
+                                <td>Calidad de Escritura Natural</td>
+                                <td>8.5 / 10</td>
+                                <td><strong>10 / 10</strong></td>
+                                <td>8.0 / 10</td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Generación de Código (Programación)</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">9.5 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">9.7 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300">8.5 / 10</td>
+                            <tr>
+                                <td>Generación de Código (Programación)</td>
+                                <td><strong>9.5 / 10</strong></td>
+                                <td><strong>9.7 / 10</strong></td>
+                                <td>8.5 / 10</td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Multimodalidad (Audio/Vídeo)</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">9.5 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">7.0 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300 bg-green-50 font-bold text-green-700">10 / 10</td>
+                            <tr>
+                                <td>Multimodalidad (Audio/Vídeo)</td>
+                                <td>9.5 / 10</td>
+                                <td>7.0 / 10</td>
+                                <td><strong>10 / 10</strong></td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Agentes Autónomos / Control PC</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300 bg-green-50 font-bold text-green-700">9.9 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">8.0 / 10</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300">8.5 / 10</td>
+                            <tr>
+                                <td>Agentes Autónomos / Control PC</td>
+                                <td><strong>9.9 / 10</strong></td>
+                                <td>8.0 / 10</td>
+                                <td>8.5 / 10</td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Integración con Herramientas de Oficina</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">Buena (Microsoft 365 Copilot)</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">Limitada</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300 bg-green-50 font-bold text-green-700">Excepcional (Workspace)</td>
+                            <tr>
+                                <td>Integración con Herramientas de Oficina</td>
+                                <td>Buena (Microsoft 365 Copilot)</td>
+                                <td>Limitada</td>
+                                <td><strong>Excepcional (Workspace)</strong></td>
                             </tr>
-                            <tr class="hover:bg-gray-50 transition-colors">
-                                <td class="py-3 px-4 border-b border-r border-gray-300 font-medium">Precio Base (Mensual)</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">~22€ (Plus) / ~60€ (Pro)</td>
-                                <td class="py-3 px-4 text-center border-b border-r border-gray-300">~22€</td>
-                                <td class="py-3 px-4 text-center border-b border-gray-300">~22€ (Incluye 2TB Drive)</td>
+                            <tr>
+                                <td>Precio Base (Mensual)</td>
+                                <td>~22€ (Plus) / ~60€ (Pro)</td>
+                                <td>~22€</td>
+                                <td>~22€ (Incluye 2TB Drive)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h2 id="cual-elegir" class="text-3xl font-bold text-dark mt-8 mb-4">7. ¿Cuál elegir según tu caso?</h2>
+                <h2 id="cual-elegir">7. ¿Cuál elegir según tu caso?</h2>
                 <p>No existe el "mejor modelo universal". La elección depende enteramente de tus flujos de trabajo, de los programas que utilizas habitualmente y del tipo de resultado que priorizas. Para que lo tengas más claro, en IAFácil hemos segmentado la recomendación según diferentes perfiles de usuario:</p>
                 
-                <h3 class="text-xl font-bold text-primary mt-4">Para Estudiantes e Investigadores</h3>
+                <h3>Para Estudiantes e Investigadores</h3>
                 <p><strong>El ganador: Claude 5.5 Opus.</strong> Si pasas horas leyendo papers académicos, resumiendo libros o estructurando tesis, Claude es inigualable. Su capacidad para procesar PDFs masivos con su contexto de 2M tokens y su tono académico pero fluido te ahorrará cientos de horas. No inventa citas bibliográficas y su razonamiento deductivo para temas complejos es asombroso.</p>
 
-                <h3 class="text-xl font-bold text-primary mt-4">Para Programadores y Desarrolladores de Software</h3>
+                <h3>Para Programadores y Desarrolladores de Software</h3>
                 <p><strong>Empate técnico: Claude 5.5 Opus y GPT-6 Astra.</strong> Dependerá de tu estilo. Si te gusta trabajar en una interfaz web aislada y usar UI interactivas para previsualizar código web (HTML/React), la función Artifacts de Claude te enamorará. Sin embargo, si necesitas que la IA actúe como un agente autónomo que navegue por tu sistema de archivos local, abra la terminal, compile y arregle dependencias de forma autónoma, GPT-6 Astra es insuperable gracias a sus nuevas capacidades de agente de sistema.</p>
 
-                <h3 class="text-xl font-bold text-primary mt-4">Para Creadores de Contenido y Diseñadores</h3>
+                <h3>Para Creadores de Contenido y Diseñadores</h3>
                 <p><strong>El ganador: Gemini 3.8 Ultra.</strong> En el campo multimedia, Google se lleva la corona. Si tu trabajo implica procesar horas de vídeo en YouTube, generar imágenes fotorrealistas consistentes, o extraer guiones exactos de audios con múltiples interlocutores solapados, Gemini procesa todo esto de forma nativa a una velocidad que deja en pañales a la competencia.</p>
 
-                <h3 class="text-xl font-bold text-primary mt-4">Para el Entorno Empresarial y Productividad General</h3>
+                <h3>Para el Entorno Empresarial y Productividad General</h3>
                 <p><strong>El ganador: Gemini 3.8 (si usas Google) o GPT-6 (si usas Microsoft).</strong> La clave aquí está en la integración. La propuesta de valor de Google de ofrecer Gemini Advanced por el mismo precio que la competencia pero añadiendo 2 Terabytes de almacenamiento es imbatible económicamente, sumado a su perfecta sinergia con Docs y Sheets. Si tu empresa está en el ecosistema Microsoft, el Copilot basado en GPT-6 será tu elección natural.</p>
 
                 <!-- ADSENSE AD SLOT -->
-                <div class="my-8 p-4 border-2 border-dashed border-gray-300 bg-gray-50 text-center text-gray-500 text-sm">
+                <div>
                     <!-- ADSENSE AD SLOT -->
                     <p>Espacio reservado para anuncio (AdSense)</p>
                 </div>
 
-                <h2 id="recomendacion-final" class="text-3xl font-bold text-dark mt-8 mb-4">8. Nuestra Recomendación Final</h2>
+                <h2 id="recomendacion-final">8. Nuestra Recomendación Final</h2>
                 <p>En IAFácil, solemos recomendar una estrategia híbrida si tu presupuesto te lo permite, ya que cada uno tiene "superpoderes" únicos. Sin embargo, si tuviéramos que recomendar un solo modelo para el usuario general que busca la mayor relación calidad-precio y versatilidad en septiembre de 2026, <strong>nuestra elección es Gemini 3.8 Ultra de Google</strong>.</p>
                 <p>La combinación de un contexto de 10 millones de tokens (lo que en la práctica significa que nunca te preocuparás por límites de memoria), su velocidad fulgurante, su perfecta comprensión multimodal y la inclusión de 2TB de almacenamiento en la nube, lo convierten en una herramienta que transforma tu vida digital por completo. </p>
                 <p>No obstante, los puristas del texto y la programación seguirán encontrando en Claude 5.5 Opus un refugio de calidad y elegancia intelectual que, a día de hoy, ningún otro modelo puede replicar con tanta fidelidad. Elijas el que elijas, estás contratando al asistente más brillante de la historia de la humanidad por apenas veinte euros al mes. Es un buen momento para estar vivo y ser un entusiasta de la tecnología.</p>
 
-                <hr class="my-8 border-gray-200">
+                <hr>
 
-                <h2 id="faq" class="text-3xl font-bold text-dark mt-8 mb-4">9. Preguntas Frecuentes (FAQ)</h2>
-                <div class="space-y-4">
-                    <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <summary class="font-semibold text-lg text-dark list-none flex justify-between items-center">
+                <h2 id="faq">9. Preguntas Frecuentes (FAQ)</h2>
+                <div class="faq-accordion">
+                    <details>
+                        <summary>
                             ¿Cuál de estos modelos tiene menos "alucinaciones"?
-                            <span class="text-primary group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-3 text-gray-700">En las pruebas de 2026, Claude 5.5 Opus y GPT-6 Astra empatan con una tasa de alucinación cercana al 0.1%. Gracias a los nuevos métodos de razonamiento "paso a paso" (chain of thought interno), ambos modelos prefieren admitir que no saben una respuesta antes que inventarla. Gemini 3.8 es extremadamente preciso cuando trabaja sobre documentos que le proporcionas, pero puede tener ligeras imprecisiones en consultas de trivia general comparado con Claude.</p>
+                        <p>En las pruebas de 2026, Claude 5.5 Opus y GPT-6 Astra empatan con una tasa de alucinación cercana al 0.1%. Gracias a los nuevos métodos de razonamiento "paso a paso" (chain of thought interno), ambos modelos prefieren admitir que no saben una respuesta antes que inventarla. Gemini 3.8 es extremadamente preciso cuando trabaja sobre documentos que le proporcionas, pero puede tener ligeras imprecisiones en consultas de trivia general comparado con Claude.</p>
                     </details>
                     
-                    <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <summary class="font-semibold text-lg text-dark list-none flex justify-between items-center">
+                    <details>
+                        <summary>
                             ¿Puedo usar estos modelos gratis?
-                            <span class="text-primary group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-3 text-gray-700">Sí. Las tres empresas ofrecen versiones gratuitas muy potentes. OpenAI ofrece GPT-6 Luna de forma gratuita con límites de uso. Anthropic ofrece Claude 5.5 Fable, y Google ofrece Gemini 3.8 Flash. Aunque no tienen todo el poder de los modelos de pago, son ampliamente superiores a cualquier modelo premium de 2024.</p>
+                        <p>Sí. Las tres empresas ofrecen versiones gratuitas muy potentes. OpenAI ofrece GPT-6 Luna de forma gratuita con límites de uso. Anthropic ofrece Claude 5.5 Fable, y Google ofrece Gemini 3.8 Flash. Aunque no tienen todo el poder de los modelos de pago, son ampliamente superiores a cualquier modelo premium de 2024.</p>
                     </details>
 
-                    <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <summary class="font-semibold text-lg text-dark list-none flex justify-between items-center">
+                    <details>
+                        <summary>
                             ¿Cuál es mejor para aprender idiomas?
-                            <span class="text-primary group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-3 text-gray-700">GPT-6. Su modelo de voz conversacional en tiempo real te permite mantener conversaciones fluidas en más de 80 idiomas. Escucha tu pronunciación, detecta tu acento, hace correcciones sutiles y tiene una latencia casi nula, actuando literalmente como un tutor nativo en tu teléfono.</p>
+                        <p>GPT-6. Su modelo de voz conversacional en tiempo real te permite mantener conversaciones fluidas en más de 80 idiomas. Escucha tu pronunciación, detecta tu acento, hace correcciones sutiles y tiene una latencia casi nula, actuando literalmente como un tutor nativo en tu teléfono.</p>
                     </details>
 
-                    <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <summary class="font-semibold text-lg text-dark list-none flex justify-between items-center">
+                    <details>
+                        <summary>
                             ¿Qué es la "ventana de contexto" y por qué importa?
-                            <span class="text-primary group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-3 text-gray-700">Es la cantidad de información que la IA puede "recordar" o procesar en una sola interacción. Gemini lidera con 10 millones de tokens (equivalente a cientos de libros largos de texto, o varias horas de vídeo de alta definición). Esto te permite subir carpetas enteras de facturas, libros históricos o bases de datos enormes y pedirle a la IA que trabaje sobre ellos sin perder contexto.</p>
+                        <p>Es la cantidad de información que la IA puede "recordar" o procesar en una sola interacción. Gemini lidera con 10 millones de tokens (equivalente a cientos de libros largos de texto, o varias horas de vídeo de alta definición). Esto te permite subir carpetas enteras de facturas, libros históricos o bases de datos enormes y pedirle a la IA que trabaje sobre ellos sin perder contexto.</p>
                     </details>
 
-                    <details class="group bg-gray-50 rounded-lg p-4 cursor-pointer hover:bg-gray-100 transition-colors">
-                        <summary class="font-semibold text-lg text-dark list-none flex justify-between items-center">
+                    <details>
+                        <summary>
                             ¿Mis datos están seguros si uso las versiones de pago?
-                            <span class="text-primary group-open:rotate-180 transition-transform">▼</span>
                         </summary>
-                        <p class="mt-3 text-gray-700">Las políticas estándar para los planes empresariales o las suscripciones premium (como ChatGPT Plus/Pro, Claude Pro, Gemini Advanced) establecen explícitamente en 2026 que tus conversaciones NO se utilizan para entrenar futuros modelos. Sin embargo, en las versiones gratuitas, por defecto, tus interacciones pueden ser usadas para entrenamiento, aunque todas ofrecen la opción de desactivarlo en la configuración de privacidad.</p>
+                        <p>Las políticas estándar para los planes empresariales o las suscripciones premium (como ChatGPT Plus/Pro, Claude Pro, Gemini Advanced) establecen explícitamente en 2026 que tus conversaciones NO se utilizan para entrenar futuros modelos. Sin embargo, en las versiones gratuitas, por defecto, tus interacciones pueden ser usadas para entrenamiento, aunque todas ofrecen la opción de desactivarlo en la configuración de privacidad.</p>
                     </details>
                 </div>
             </div>
             
             <!-- Author Bios (Optional) -->
-            <div class="mt-12 bg-gray-100 p-6 rounded-lg flex items-center gap-6">
-                <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold shrink-0">
+            <div class="author-bios">
+                <div>
                     IA
                 </div>
                 <div>
-                    <h4 class="font-bold text-dark text-lg">Sobre el Equipo IAFácil</h4>
-                    <p class="text-gray-600 mt-2 text-sm">Somos un grupo de entusiastas, desarrolladores y educadores obsesionados con hacer que la inteligencia artificial sea accesible para todos. Probamos, rompemos y analizamos los últimos modelos para que tú no tengas que hacerlo. Inteligencia Artificial explicada de forma sencilla.</p>
+                    <h4>Sobre el Equipo IAFácil</h4>
+                    <p>Somos un grupo de entusiastas, desarrolladores y educadores obsesionados con hacer que la inteligencia artificial sea accesible para todos. Probamos, rompemos y analizamos los últimos modelos para que tú no tengas que hacerlo. Inteligencia Artificial explicada de forma sencilla.</p>
                 </div>
             </div>
-        </main>
-        
-        <!-- Sidebar Placeholder -->
-        <aside class="lg:col-span-4 space-y-6">
-            <!-- Newsletter Widget -->
-            <div class="bg-dark text-white rounded-lg p-6 shadow-sm">
-                <h3 class="text-xl font-bold mb-3">Suscríbete a IAFácil</h3>
-                <p class="text-gray-300 text-sm mb-4">Recibe las últimas noticias y tutoriales sobre IA directamente en tu correo. Sin spam.</p>
-                <form class="flex flex-col gap-3" onsubmit="event.preventDefault();">
-                    <input type="email" placeholder="Tu correo electrónico" class="px-4 py-2 rounded text-dark focus:outline-none focus:ring-2 focus:ring-accent w-full" required>
-                    <button type="submit" class="bg-accent hover:bg-blue-400 text-white font-bold py-2 px-4 rounded transition-colors w-full">Suscribirse</button>
-                </form>
-            </div>
-
-            <!-- Sidebar Ad Placeholder -->
-            <div class="p-4 border-2 border-dashed border-gray-300 bg-gray-50 h-64 flex items-center justify-center text-center text-gray-500 text-sm">
-                <!-- ADSENSE AD SLOT -->
-                <p>Anuncio Cuadrado Sidebar (AdSense)</p>
-            </div>
-
-            <!-- Categories Widget -->
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-                <h3 class="text-xl font-bold text-dark mb-4 border-b pb-2">Categorías Populares</h3>
-                <ul class="space-y-3">
-                    <li><a href="#" class="text-gray-600 hover:text-primary flex justify-between"><span>Tutoriales Prácticos</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">24</span></a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-primary flex justify-between"><span>Comparativas</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">12</span></a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-primary flex justify-between"><span>Prompt Engineering</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">35</span></a></li>
-                    <li><a href="#" class="text-gray-600 hover:text-primary flex justify-between"><span>Noticias IA</span> <span class="bg-gray-100 px-2 rounded-full text-xs py-1">89</span></a></li>
-                </ul>
-            </div>
-        </aside>
-    </div>
-
-    <!-- Related Articles Section -->
-    <section class="bg-light border-t border-gray-200 py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-dark mb-6">Artículos Relacionados que te pueden interesar</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Placeholder for Related Article 1 -->
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                    <div class="h-48 bg-gray-200 w-full"></div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-secondary uppercase tracking-wider mb-2 block">Tutorial</span>
-                        <h3 class="font-bold text-lg text-dark mb-2"><a href="#" class="hover:text-primary">Cómo crear tu propio GPT personalizado en 5 minutos</a></h3>
-                        <p class="text-gray-600 text-sm mb-4">Aprende paso a paso cómo entrenar un modelo con tus propios datos utilizando la interfaz nativa de OpenAI.</p>
-                        <a href="#" class="text-primary font-medium text-sm hover:underline">Leer más →</a>
-                    </div>
-                </article>
-                <!-- Placeholder for Related Article 2 -->
-                <article class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                    <div class="h-48 bg-gray-200 w-full"></div>
-                    <div class="p-6">
-                        <span class="text-xs font-semibold text-secondary uppercase tracking-wider mb-2 block">Productividad</span>
-                        <h3 class="font-bold text-lg text-dark mb-2"><a href="#" class="hover:text-primary">10 Prompts esenciales para automatizar tareas aburridas</a></h3>
-                        <p class="text-gray-600 text-sm mb-4">Descubre las estructuras exactas para delegar la redacción de correos, resúmenes de reuniones y hojas de cálculo a la IA.</p>
-                        <a href="#" class="text-primary font-medium text-sm hover:underline">Leer más →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+    </article>
+  </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <a href="../index.html" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
-                        <span class="text-3xl">🤖</span> IAFácil
-                    </a>
-                    <p class="text-gray-400 text-sm">Inteligencia Artificial explicada de forma sencilla. Nuestro objetivo es democratizar el conocimiento sobre las herramientas que están cambiando el mundo.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <span class="brand-name">IAFácil</span>
+                    <p>Hacemos la Inteligencia Artificial accesible y fácil de entender para todo el mundo. Mantente al día con las últimas tendencias tecnológicas.</p>
                 </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Navegación</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="../index.html" class="hover:text-white transition-colors">Inicio</a></li>
-                        <li><a href="../herramientas.html" class="hover:text-white transition-colors">Herramientas IA</a></li>
-                        <li><a href="../tutoriales.html" class="hover:text-white transition-colors">Tutoriales</a></li>
-                        <li><a href="../noticias.html" class="hover:text-white transition-colors">Noticias</a></li>
-                        <li><a href="../sobre-nosotros.html" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="../politica-privacidad.html" class="hover:text-white transition-colors">Política de Privacidad</a></li>
-                        <li><a href="../aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a></li>
-                        <li><a href="../politica-cookies.html" class="hover:text-white transition-colors">Política de Cookies</a></li>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="../aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="../politica-privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="../politica-cookies.html">Política de Cookies</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center">
+            <div class="footer-bottom">
                 <p>&copy; 2026 IAFácil. Todos los derechos reservados.</p>
-                <div class="mt-4 md:mt-0 flex gap-4">
-                    <a href="#" class="hover:text-white" aria-label="Twitter">Twitter</a>
-                    <a href="#" class="hover:text-white" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" class="hover:text-white" aria-label="YouTube">YouTube</a>
-                </div>
             </div>
         </div>
     </footer>
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] p-4 transform translate-y-0 transition-transform duration-300 z-50">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-sm text-gray-700 max-w-3xl">
-                Utilizamos cookies propias y de terceros para mejorar nuestros servicios, mostrarte publicidad relacionada con tus preferencias mediante el análisis de tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes leer más sobre nuestra <a href="../politica-cookies.html" class="text-primary hover:underline">Política de Cookies</a>.
-            </p>
-            <div class="flex gap-3 shrink-0">
-                <button id="accept-cookies" class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-colors text-sm">
-                    Aceptar
-                </button>
-            </div>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. <a href="../politica-cookies.html">Más información</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn btn-primary">Aceptar</button>
+            <button id="reject-cookies" class="btn btn-secondary">Rechazar</button>
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- JavaScript -->
     <script src="../js/main.js"></script>
-    <script>
-        // Simple script for Cookie banner
-        document.addEventListener('DOMContentLoaded', () => {
-            const banner = document.getElementById('cookie-banner');
-            const acceptBtn = document.getElementById('accept-cookies');
-            
-            if (!localStorage.getItem('cookiesAccepted')) {
-                banner.style.display = 'block';
-            } else {
-                banner.style.display = 'none';
-            }
-
-            acceptBtn.addEventListener('click', () => {
-                localStorage.setItem('cookiesAccepted', 'true');
-                banner.style.transform = 'translateY(100%)';
-                setTimeout(() => { banner.style.display = 'none'; }, 300);
-            });
-        });
-    </script>
 </body>
 </html>
 

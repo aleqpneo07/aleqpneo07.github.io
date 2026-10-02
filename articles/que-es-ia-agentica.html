@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,10 @@
     <title>Qué es la IA Agéntica y Cómo Va a Cambiar Tu Trabajo | IAFácil</title>
     <meta name="description" content="Descubre qué es la IA agéntica, cómo funcionan los agentes autónomos de inteligencia artificial y por qué es la tendencia tecnológica más importante de 2026.">
     <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Open Graph Tags -->
     <meta property="og:type" content="article">
@@ -55,33 +59,38 @@
          crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header & Navigation -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="../index.html">
-                    <span class="brand-name">IAFácil</span>
-                    <span class="tagline">Inteligencia Artificial explicada de forma sencilla</span>
-                </a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../herramientas.html">Herramientas</a></li>
-                    <li><a href="../tutoriales.html">Tutoriales</a></li>
-                    <li><a href="../noticias.html" class="active">Noticias</a></li>
-                    <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Reading progress -->
+  <div class="reading-progress"><div id="reading-progress"></div></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="../index.html" class="site-logo">🤖 <span>IAFácil</span></a>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#herramientas">Herramientas</a></li>
+          <li><a href="../index.html#tutoriales">Tutoriales</a></li>
+          <li><a href="../index.html#noticias">Noticias</a></li>
+          <li><a href="../index.html#hardware">Hardware</a></li>
+          <li><a href="../sobre-nosotros.html">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
     <main class="container">
         <!-- Breadcrumbs -->
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <ol>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../noticias.html">Noticias IA</a></li>
+                <li><a href="../index.html#noticias">Noticias IA</a></li>
                 <li aria-current="page">Qué es la IA Agéntica y Cómo Va a Cambiar Tu Trabajo</li>
             </ol>
         </nav>
@@ -227,18 +236,18 @@
             <h2>Artículos Relacionados</h2>
             <div class="article-grid">
                 <article class="card">
-                    <a href="mejores-herramientas-ia-2026.html">
+                    <a href="mejores-herramientas-ia-gratis.html">
                         <div class="card-content">
-                            <h3>Las 10 Mejores Herramientas de IA para Productividad en 2026</h3>
-                            <p>Descubre las aplicaciones de inteligencia artificial que están revolucionando la forma en que trabajamos y organizamos nuestro tiempo.</p>
+                            <h3>Las 20 Mejores Herramientas de IA Gratuitas en 2026</h3>
+                            <p>Descubre las mejores aplicaciones de inteligencia artificial gratuitas para aumentar tu productividad hoy mismo.</p>
                         </div>
                     </a>
                 </article>
                 <article class="card">
-                    <a href="guia-prompt-engineering.html">
+                    <a href="mejores-extensiones-chrome-ia.html">
                         <div class="card-content">
-                            <h3>Guía Definitiva de Prompt Engineering para Agentes</h3>
-                            <p>Aprende las técnicas avanzadas para comunicarte eficazmente con agentes autónomos y obtener los mejores resultados en tus automatizaciones.</p>
+                            <h3>Top 10 Extensiones de Google Chrome con IA</h3>
+                            <p>Acelera tu navegación diaria, resume textos y automatiza tareas repetitivas directamente desde tu navegador.</p>
                         </div>
                     </a>
                 </article>
@@ -258,8 +267,8 @@
                     <h3>Legal</h3>
                     <ul>
                         <li><a href="../aviso-legal.html">Aviso Legal</a></li>
-                        <li><a href="../politica-privacidad.html">Política de Privacidad</a></li>
-                        <li><a href="../politica-cookies.html">Política de Cookies</a></li>
+                        <li><a href="../privacidad.html">Política de Privacidad</a></li>
+                        <li><a href="../cookies.html">Política de Cookies</a></li>
                     </ul>
                 </div>
             </div>
@@ -271,7 +280,7 @@
 
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="cookie-banner">
-        <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. <a href="../politica-cookies.html">Más información</a>.</p>
+        <p>Utilizamos cookies propias y de terceros para mejorar nuestros servicios y analizar el tráfico web. <a href="../cookies.html">Más información</a>.</p>
         <div class="cookie-buttons">
             <button id="accept-cookies" class="btn btn-primary">Aceptar</button>
             <button id="reject-cookies" class="btn btn-secondary">Rechazar</button>

@@ -121,36 +121,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 8. TOC Auto-generation
+    // 8. TOC Auto-generation (skip if TOC already has content)
     const tocContainer = document.getElementById('toc');
     
     if (tocContainer && article) {
-        const headings = article.querySelectorAll('h2, h3');
-        if (headings.length > 0) {
-            const tocList = document.createElement('ul');
-            
-            headings.forEach((heading, index) => {
-                // Generar ID si no tiene
-                if (!heading.id) {
-                    const idText = heading.textContent.trim().toLowerCase().replace(/[\s\W-]+/g, '-');
-                    heading.id = `${idText}-${index}`;
-                }
+        // Skip auto-generation if the TOC already contains a list with links
+        const existingList = tocContainer.querySelector('ul');
+        const hasExistingContent = existingList && existingList.querySelectorAll('a').length > 0;
+        
+        if (!hasExistingContent) {
+            const headings = article.querySelectorAll('h2, h3');
+            if (headings.length > 0) {
+                const tocList = document.createElement('ul');
+                
+                headings.forEach((heading, index) => {
+                    // Generar ID si no tiene
+                    if (!heading.id) {
+                        const idText = heading.textContent.trim().toLowerCase().replace(/[\s\W-]+/g, '-');
+                        heading.id = `${idText}-${index}`;
+                    }
 
-                const li = document.createElement('li');
-                li.className = `toc-${heading.tagName.toLowerCase()}`;
+                    const li = document.createElement('li');
+                    li.className = `toc-${heading.tagName.toLowerCase()}`;
+                    
+                    const a = document.createElement('a');
+                    a.href = `#${heading.id}`;
+                    a.textContent = heading.textContent;
+                    
+                    li.appendChild(a);
+                    tocList.appendChild(li);
+                });
                 
-                const a = document.createElement('a');
-                a.href = `#${heading.id}`;
-                a.textContent = heading.textContent;
-                
-                li.appendChild(a);
-                tocList.appendChild(li);
-            });
-            
-            tocContainer.appendChild(tocList);
-        } else {
-            // Ocultar TOC si no hay encabezados
-            tocContainer.style.display = 'none';
+                tocContainer.appendChild(tocList);
+            } else {
+                // Ocultar TOC si no hay encabezados
+                tocContainer.style.display = 'none';
+            }
         }
     }
 
@@ -234,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme === 'dark' || (!currentTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         body.classList.add('dark-mode');
+        if (themeToggle) themeToggle.textContent = '☀️';
     }
 
     if (themeToggle) {
@@ -242,10 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isDarkMode = body.classList.contains('dark-mode');
             
             localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-            
-            // Si el botón tiene un icono que cambiar, se podría hacer aquí
-            // Ejemplo asumiendo que el interior cambia:
-            // themeToggle.innerHTML = isDarkMode ? 'Icono Sol' : 'Icono Luna';
+            themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
         });
     }
 
